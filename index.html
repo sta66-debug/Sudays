@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudays Ahmed | Financial Leadership</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --midnight: #0a0f14;
+            --silver: #cbd5e1;
+            --electric-blue: #38bdf8;
+            --soft-white: #f1f5f9;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--midnight);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* --- Particle Canvas --- */
+        #hero-canvas {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        #progress-bar {
+            position: fixed;
+            top: 0; left: 0; height: 3px;
+            background: var(--electric-blue);
+            z-index: 2000;
+            width: 0%;
+            transition: width 0.1s ease-out;
+            box-shadow: 0 0 10px var(--electric-blue);
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 15, 20, 0.85);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .logo { font-weight: 800; letter-spacing: 2px; font-size: 1.2rem; color: var(--soft-white); }
+
+        /* --- Hero Section --- */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10%;
+            background: radial-gradient(circle at center, #111a24 0%, #0a0f14 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content { z-index: 2; max-width: 900px; }
+
+        .hero-headshot {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--electric-blue);
+            box-shadow: 0 0 35px rgba(56, 189, 248, 0.3);
+            margin-bottom: 2.5rem;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        .hero-tag {
+            color: var(--electric-blue);
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+            display: block;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.8rem, 8vw, 5.5rem);
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            color: var(--soft-white);
+            opacity: 0;
+            transform: translateY(30px);
+            font-style: italic;
+        }
+
+        .hero-subtext {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 750px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        /* --- Sections --- */
+        section { padding: 120px 10%; background: var(--midnight); position: relative; z-index: 2; }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--soft-white);
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .work-card {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: 0.4s ease;
+        }
+
+        .work-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--electric-blue);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .role-tag {
+            color: var(--electric-blue);
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .work-card ul {
+            list-style: none;
+            margin-top: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .work-card ul li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .work-card ul li::before {
+            content: "—";
+            color: var(--electric-blue);
+            position: absolute; left: 0;
+        }
+
+        /* --- Skills --- */
+        .skill-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .skill-item {
+            background: rgba(255,255,255,0.05);
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            color: var(--silver);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        footer { padding: 100px 10%; text-align: center; background: #05080a; }
+
+        .contact-btn {
+            display: inline-block;
+            border: 1px solid var(--silver);
+            color: var(--soft-white);
+            padding: 1.2rem 3.5rem;
+            text-decoration: none;
+            letter-spacing: 3px;
+            margin-top: 2rem;
+            transition: 0.4s;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="progress-bar"></div>
+
+    <nav>
+        <div class="logo">SUDAYS AHMED</div>
+    </nav>
+
+    <header>
+        <canvas id="hero-canvas"></canvas>
+        <img src="assets/Linkedin photo.jpg" alt="Sudays Ahmed" class="hero-headshot" id="hero-img">
+        <div class="hero-content">
+            <span class="hero-tag">Accounting & Strategy</span>
+            <h1 id="hero-title">Aspiring CPA professional.</h1>
+            <p id="hero-para" class="hero-subtext">
+                Incoming Intern at <strong>Withum</strong>. Rutgers Accounting (3.65 GPA). Scaling financial infrastructure for high-growth ventures and multi-marketplace logistics.
+            </p>
+        </div>
+    </header>
+
+    <section id="experience">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Professional Experience</h2>
+        </div>
+        <div class="experience-grid">
+            <div class="work-card" data-aos="fade-up">
+                <span class="role-tag">Incoming</span>
+                <h3 style="margin-top: 10px;">Audit/Tax Intern — Withum</h3>
+                <ul>
+                    <li>Gaining hands-on experience in public accounting and advisory services.</li>
+                    <li>Applying technical accounting standards to enterprise financial data.</li>
+                </ul>
+            </div>
+
+            <div class="work-card" data-aos="fade-up" data-aos-delay="100">
+                <span class="role-tag">CEO / Co-Founder</span>
+                <h3 style="margin-top: 10px;">Ship Ninja LLC</h3>
+                <ul>
+                    <li>Directed financial operations for warehouse and staff of 6+.</li>
+                    <li>Designed pricing algorithms improving profit margins on StockX and eBay.</li>
+                    <li>Maintained 95%+ satisfaction for 60+ global clients.</li>
+                </ul>
+            </div>
+
+            <div class="work-card" data-aos="fade-up" data-aos-delay="200">
+                <span class="role-tag">Chief Financial Officer</span>
+                <h3 style="margin-top: 10px;">Moments</h3>
+                <ul>
+                    <li>Spearheaded budgeting for a student-founded networking startup.</li>
+                    <li>Developed cost-tracking models for marketing and payroll.</li>
+                    <li>Produced fundraising forecasts for investor outreach.</li>
+                </ul>
+            </div>
+
+            <div class="work-card" data-aos="fade-up">
+                <span class="role-tag">Assistant Manager</span>
+                <h3 style="margin-top: 10px;">Skechers</h3>
+                <ul>
+                    <li>Handled daily cash reconciliation and reporting for a team of 4.</li>
+                    <li>Conducted weekly sales tracking and variance analysis.</li>
+                    <li>Implemented inventory controls reducing shrinkage.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="background: rgba(255,255,255,0.01);">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Technical Stack</h2>
+        </div>
+        <div class="skill-container" data-aos="zoom-in">
+            <span class="skill-item">Financial Analysis</span>
+            <span class="skill-item">Revenue Recognition</span>
+            <span class="skill-item">Budgeting & Forecasting</span>
+            <span class="skill-item">PivotTables & VLOOKUP</span>
+            <span class="skill-item">Variance Analysis</span>
+            <span class="skill-item">Inventory Management</span>
+            <span class="skill-item">Job Costing</span>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2 style="font-family: 'Playfair Display'; font-size: 3rem;">Let's build.</h2>
+        <p style="color: var(--text-muted); margin-top: 1rem;">Based in Edison, NJ</p>
+        <a href="mailto:sta66@scarletmail.rutgers.edu" class="contact-btn">Send Message</a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Particle System
+        const canvas = document.getElementById('hero-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        function initCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 1.5 + 0.5;
+                this.speedX = Math.random() * 0.4 - 0.2;
+                this.speedY = Math.random() * 0.4 - 0.2;
+                this.opacity = Math.random() * 0.5;
+            }
+            update() {
+                this.x += this.speedX; this.y += this.speedY;
+                if (this.x > canvas.width) this.x = 0; if (this.x < 0) this.x = canvas.width;
+                if (this.y > canvas.height) this.y = 0; if (this.y < 0) this.y = canvas.height;
+            }
+            draw() {
+                ctx.fillStyle = `rgba(56, 189, 248, ${this.opacity})`;
+                ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill();
+            }
+        }
+        function createParticles() { for (let i = 0; i < 80; i++) { particles.push(new Particle()); } }
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            requestAnimationFrame(animate);
+        }
+        initCanvas(); createParticles(); animate();
+        window.addEventListener('resize', initCanvas);
+
+        // Entrance GSAP
+        window.onload = () => {
+            const tl = gsap.timeline();
+            tl.to("#hero-img", { opacity: 1, scale: 1, duration: 1, ease: "back.out(1.7)" })
+              .to(".hero-tag", { opacity: 1, y: 0, duration: 0.8 }, "-=0.6")
+              .to("#hero-title", { opacity: 1, y: 0, duration: 0.8 }, "-=0.4")
+              .to("#hero-para", { opacity: 1, y: 0, duration: 0.8 }, "-=0.4");
+        };
+
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            document.getElementById("progress-bar").style.width = (winScroll / height) * 100 + "%";
+        };
+    </script>
+</body>
+</html>
