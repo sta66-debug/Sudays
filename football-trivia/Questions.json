@@ -1,0 +1,228 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "🏆 World Cup",
+      "question": "Who scored the famous 'Hand of God' goal in the 1986 World Cup?",
+      "image_prompt": "Diego Maradona in Argentina blue and white striped jersey, celebrating a goal, 1986 World Cup Mexico, dramatic stadium lighting, oil painting style",
+      "options": ["Pelé", "Diego Maradona", "Ronaldo", "Zinedine Zidane"],
+      "answer": 1,
+      "explanation": "Maradona punched the ball into the net with his hand against England in the 1986 quarterfinal, then scored the 'Goal of the Century' in the same game.",
+      "option_explanations": [
+        "❌ Pelé retired in 1977 — his last World Cup was 1970 in Mexico.",
+        "✅ Correct! Maradona's 'Hand of God' is the most controversial goal in World Cup history.",
+        "❌ Ronaldo (R9) was only 9 years old in 1986. His debut was the 1994 World Cup.",
+        "❌ Zidane was 14 in 1986. His iconic moments came in 1998 and 2006."
+      ],
+      "difficulty": "easy",
+      "points": 10,
+      "flag": "🇦🇷"
+    },
+    {
+      "id": 2,
+      "category": "🏆 World Cup",
+      "question": "Which country has won the most FIFA World Cup titles?",
+      "image_prompt": "Brazilian national soccer team celebrating World Cup victory, yellow jerseys, green shorts, confetti falling, trophy held high, vibrant illustration style",
+      "options": ["Germany", "Argentina", "Brazil", "Italy"],
+      "answer": 2,
+      "explanation": "Brazil leads with 5 World Cup titles (1958, 1962, 1970, 1994, 2002) and is the only nation to have played in every single World Cup.",
+      "option_explanations": [
+        "❌ Germany has 4 titles (1954, 1974, 1990, 2014) — impressive but not the most.",
+        "❌ Argentina has 3 titles (1978, 1986, 2022) — including Messi's 2022 triumph.",
+        "✅ Correct! Brazil's 5 titles is the all-time record. They've never missed a World Cup.",
+        "❌ Italy has 4 titles (1934, 1938, 1982, 2006) — tied with Germany."
+      ],
+      "difficulty": "easy",
+      "points": 10,
+      "flag": "🇧🇷"
+    },
+    {
+      "id": 3,
+      "category": "⚽ Premier League",
+      "question": "Which player holds the record for most Premier League goals of all time?",
+      "image_prompt": "English Premier League striker celebrating a goal in a packed stadium, black and white striped jersey, crowd roaring, dynamic sports art style",
+      "options": ["Wayne Rooney", "Frank Lampard", "Andrew Cole", "Alan Shearer"],
+      "answer": 3,
+      "explanation": "Alan Shearer scored 260 Premier League goals for Blackburn Rovers and Newcastle United between 1992–2006. The record still stands.",
+      "option_explanations": [
+        "❌ Wayne Rooney scored 208 PL goals — great but 52 short of Shearer.",
+        "❌ Frank Lampard scored 177 PL goals — incredible for a midfielder.",
+        "❌ Andrew Cole scored 187 PL goals — deadly but behind Shearer.",
+        "✅ Correct! Shearer's 260 goals is the untouchable all-time PL record."
+      ],
+      "difficulty": "medium",
+      "points": 20,
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    },
+    {
+      "id": 4,
+      "category": "🌟 Players & Legends",
+      "question": "How many Ballon d'Or awards has Lionel Messi won?",
+      "image_prompt": "Soccer legend in Argentina blue and white jersey lifting a golden trophy award, stadium lights, confetti, painterly dramatic style",
+      "options": ["6", "7", "8", "9"],
+      "answer": 2,
+      "explanation": "Messi has won 8 Ballon d'Or awards — the most in history. His 8th came in 2023 following Argentina's 2022 World Cup triumph.",
+      "option_explanations": [
+        "❌ 6 was his count before 2021. He has since won two more.",
+        "❌ 7 was correct after 2021 — but he won his 8th in 2023.",
+        "✅ Correct! Messi's 8 Ballon d'Or awards is the all-time record as of 2023.",
+        "❌ 9 is not correct — Messi has 8. Ronaldo has 5 by comparison."
+      ],
+      "difficulty": "medium",
+      "points": 20,
+      "flag": "🇦🇷"
+    },
+    {
+      "id": 5,
+      "category": "🏆 Champions League",
+      "question": "Which club has won the most UEFA Champions League titles?",
+      "image_prompt": "Real Madrid players in white jerseys celebrating Champions League victory, giant trophy, Santiago Bernabeu stadium, golden confetti, epic illustration",
+      "options": ["Barcelona", "Real Madrid", "Bayern Munich", "AC Milan"],
+      "answer": 1,
+      "explanation": "Real Madrid has won the Champions League/European Cup a record 15 times, including 5 times in just 9 years between 2014 and 2022.",
+      "option_explanations": [
+        "❌ Barcelona has 5 Champions League titles — impressive but far behind Real Madrid.",
+        "✅ Correct! Real Madrid's 15 UCL titles is the all-time record by a wide margin.",
+        "❌ Bayern Munich has 6 Champions League titles — third most in history.",
+        "❌ AC Milan has 7 Champions League titles — second most, but still behind Real Madrid."
+      ],
+      "difficulty": "easy",
+      "points": 10,
+      "flag": "🇪🇸"
+    },
+    {
+      "id": 6,
+      "category": "⚽ Premier League",
+      "question": "Which club has won the most Premier League titles?",
+      "image_prompt": "Manchester United players in red jerseys lifting the Premier League trophy, Old Trafford stadium packed with fans, confetti, triumphant digital art",
+      "options": ["Liverpool", "Arsenal", "Chelsea", "Manchester United"],
+      "answer": 3,
+      "explanation": "Manchester United has won 20 Premier League/First Division titles, 13 of which came in the Premier League era under Sir Alex Ferguson.",
+      "option_explanations": [
+        "❌ Liverpool has 19 league titles — one behind United, with their last PL title in 2020.",
+        "❌ Arsenal has 13 league titles, including 3 PL titles and the famous 2003–04 Invincibles season.",
+        "❌ Chelsea has 6 Premier League titles — very successful in the modern era but far behind United.",
+        "✅ Correct! Manchester United's 20 titles is the most in English football history."
+      ],
+      "difficulty": "medium",
+      "points": 20,
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    },
+    {
+      "id": 7,
+      "category": "🌟 Players & Legends",
+      "question": "Pelé scored how many official career goals in total?",
+      "image_prompt": "Pelé in Brazil yellow jersey, dribbling past defenders, 1970 World Cup era, vintage retro poster art style, warm golden tones",
+      "options": ["643", "757", "1279", "541"],
+      "answer": 1,
+      "explanation": "Pelé scored 757 officially recognized goals in his career according to RSSSF. He is widely considered the greatest footballer of all time, winning 3 World Cups with Brazil.",
+      "option_explanations": [
+        "❌ 643 is too low — Pelé was far more prolific than that across his full career.",
+        "✅ Correct! Pelé scored 757 officially recognized career goals — a staggering achievement.",
+        "❌ 1279 is a figure sometimes cited but includes unofficial friendlies not recognized by FIFA.",
+        "❌ 541 is way too low — that figure doesn't represent Pelé's incredible output."
+      ],
+      "difficulty": "hard",
+      "points": 30,
+      "flag": "🇧🇷"
+    },
+    {
+      "id": 8,
+      "category": "🏆 Champions League",
+      "question": "Who scored the winning goal in the 1999 Champions League final for Manchester United?",
+      "image_prompt": "Manchester United player in red jersey scoring a last-minute goal, Camp Nou Barcelona stadium, wild celebration, dramatic night game lighting, digital painting",
+      "options": ["Andy Cole", "Dwight Yorke", "Teddy Sheringham", "Ole Gunnar Solskjaer"],
+      "answer": 3,
+      "explanation": "Ole Gunnar Solskjaer scored in the 93rd minute to complete Manchester United's dramatic 2–1 comeback against Bayern Munich at Camp Nou, completing the treble.",
+      "option_explanations": [
+        "❌ Andy Cole was a key striker that season but did not score the winner in the final.",
+        "❌ Dwight Yorke scored crucial goals that season but not the famous 93rd minute winner.",
+        "❌ Teddy Sheringham scored the equalizer in the 91st minute — vital, but not the winner.",
+        "✅ Correct! Solskjaer poked home in the 93rd minute to complete one of football's greatest comebacks."
+      ],
+      "difficulty": "hard",
+      "points": 30,
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    },
+    {
+      "id": 9,
+      "category": "🌟 Players & Legends",
+      "question": "Which country did Zinedine Zidane represent internationally?",
+      "image_prompt": "Zinedine Zidane in French blue national team jersey, mid dribble, elegant and powerful, Stade de France, artistic portrait style",
+      "options": ["Algeria", "Morocco", "France", "Spain"],
+      "answer": 2,
+      "explanation": "Zidane played for France, winning the 1998 World Cup and 2000 European Championship. He was born in Marseille to Algerian immigrant parents.",
+      "option_explanations": [
+        "❌ Algeria is Zidane's family's country of origin — his parents are Algerian — but he was born in France and chose to represent Les Bleus.",
+        "❌ Morocco is not correct — Zidane has no connection to Morocco.",
+        "✅ Correct! Zidane represented France, scoring twice in the 1998 World Cup final vs Brazil.",
+        "❌ Spain is not correct — Zidane managed Real Madrid but always played for France."
+      ],
+      "difficulty": "easy",
+      "points": 10,
+      "flag": "🇫🇷"
+    },
+    {
+      "id": 10,
+      "category": "⚽ Premier League",
+      "question": "Which manager won the most Premier League titles?",
+      "image_prompt": "Legendary soccer manager on the touchline, wearing a suit, passionate gesturing, packed Premier League stadium, dramatic sideline portrait, painterly style",
+      "options": ["Pep Guardiola", "José Mourinho", "Arsène Wenger", "Sir Alex Ferguson"],
+      "answer": 3,
+      "explanation": "Sir Alex Ferguson won 13 Premier League titles with Manchester United between 1993 and 2013 — more than any other manager in history.",
+      "option_explanations": [
+        "❌ Pep Guardiola has won 6 Premier League titles with Man City — a remarkable record but behind Ferguson.",
+        "❌ José Mourinho won 3 Premier League titles with Chelsea (2005, 2006, 2015) — great but far fewer.",
+        "❌ Arsène Wenger won 3 Premier League titles with Arsenal — including the unbeaten 2003–04 season.",
+        "✅ Correct! Sir Alex Ferguson's 13 PL titles with Manchester United is the untouchable record."
+      ],
+      "difficulty": "easy",
+      "points": 10,
+      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+    }
+  ],
+
+  "badges": [
+    { "id": "first_correct",  "name": "First Touch",      "icon": "⚽", "description": "Answer your first question correctly",        "condition": "correct_total >= 1"   },
+    { "id": "streak_3",       "name": "Hat-Trick Hero",   "icon": "🎩", "description": "3 correct answers in a row",                  "condition": "streak >= 3"          },
+    { "id": "streak_5",       "name": "On Fire!",         "icon": "🔥", "description": "5 correct answers in a row",                  "condition": "streak >= 5"          },
+    { "id": "streak_10",      "name": "Unstoppable",      "icon": "⚡", "description": "10 correct answers in a row",                 "condition": "streak >= 10"         },
+    { "id": "streak_20",      "name": "Legendary",        "icon": "🐉", "description": "20 correct answers in a row",                 "condition": "streak >= 20"         },
+    { "id": "perfect_round",  "name": "Clean Sheet",      "icon": "🧤", "description": "100% score on a full set",                    "condition": "round_score == 100"   },
+    { "id": "wc_master",      "name": "World Cup Guru",   "icon": "🏆", "description": "Ace all World Cup questions",                 "condition": "category_perfect == 'World Cup'"        },
+    { "id": "pl_master",      "name": "PL Expert",        "icon": "🦁", "description": "Ace all Premier League questions",            "condition": "category_perfect == 'Premier League'"   },
+    { "id": "ucl_master",     "name": "UCL Scholar",      "icon": "⭐", "description": "Ace all Champions League questions",          "condition": "category_perfect == 'Champions League'" },
+    { "id": "legend_master",  "name": "Legend Whisperer", "icon": "🌟", "description": "Ace all Players & Legends questions",         "condition": "category_perfect == 'Players & Legends'" },
+    { "id": "completionist",  "name": "The Gaffer",       "icon": "📋", "description": "Answer every question at least once",         "condition": "questions_seen >= 10" },
+    { "id": "daily_3",        "name": "Dedicated Fan",    "icon": "📅", "description": "Study 3 days in a row",                      "condition": "daily_streak >= 3"    },
+    { "id": "daily_7",        "name": "Season Ticket",    "icon": "🎫", "description": "Study 7 days in a row",                      "condition": "daily_streak >= 7"    },
+    { "id": "speed_demon",    "name": "Quick Fire",       "icon": "💨", "description": "Answer 5 questions in under 10 seconds each", "condition": "fast_answers >= 5"    },
+    { "id": "bookworm",       "name": "Scout Report",     "icon": "📚", "description": "Bookmark 5 questions for review",             "condition": "bookmarks >= 5"       },
+    { "id": "comeback",       "name": "Fergie Time",      "icon": "⏱️", "description": "Get 5 correct after 3 wrong in a row",       "condition": "comeback == true"     },
+    { "id": "point_500",      "name": "Golden Boot",      "icon": "👟", "description": "Earn 500 total points",                      "condition": "total_points >= 500"  },
+    { "id": "point_1000",     "name": "World Class",      "icon": "👑", "description": "Earn 1000 total points",                     "condition": "total_points >= 1000" }
+  ],
+
+  "levels": [
+    { "level": 1, "title": "⚽ Sunday League",    "min_points": 0    },
+    { "level": 2, "title": "🥋 Academy Graduate", "min_points": 100  },
+    { "level": 3, "title": "📋 Squad Player",     "min_points": 250  },
+    { "level": 4, "title": "🌟 First Team Star",  "min_points": 500  },
+    { "level": 5, "title": "🏟️ Club Captain",     "min_points": 800  },
+    { "level": 6, "title": "🏆 League Winner",    "min_points": 1000 },
+    { "level": 7, "title": "🐉 Football Legend",  "min_points": 2000 }
+  ],
+
+  "streakBonuses": [
+    { "streak": 3,  "multiplier": 1.5, "message": "🎩 Hat-trick! 1.5x points!"     },
+    { "streak": 5,  "multiplier": 2.0, "message": "🔥 On fire! 2x points!"         },
+    { "streak": 10, "multiplier": 3.0, "message": "⚡ Unstoppable! 3x points!"     },
+    { "streak": 20, "multiplier": 5.0, "message": "🐉 Football Legend! 5x points!" }
+  ],
+
+  "encouragements": {
+    "correct":   ["⚽ Goal!", "🎯 Absolute worldie!", "🔥 Top bins!", "💎 Class!", "🌟 Tekkers!", "🚀 Get in!", "🧠 Football IQ off the charts!", "👟 Pure class!"],
+    "incorrect": ["😤 VAR check!", "💪 Back of the net next time!", "🦅 Rise up!", "📚 Hit the training ground!", "🌱 Every legend started somewhere!"],
+    "streak":    ["🔥 {n} in a row! Fergie would be proud!", "⚡ {n} streak — you're world class!", "🐉 {n} correct — absolute legend!"]
+  }
+}
